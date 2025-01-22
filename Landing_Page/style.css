@@ -1,0 +1,406 @@
+body {
+  font-family:'Poppins', sans-serif !important;
+  background-color: #f8f9fa;
+}
+
+.header {
+  background-color: #14274e;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo img {
+  height: 60px;
+}
+
+.header .logo span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.header .contact-info {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header .contact-info i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  position: relative;
+  animation: ring 1.5s infinite;
+}
+
+@keyframes ring {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+.main-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 20px;
+  background: linear-gradient(to right, #000000, #434343); padding: 50px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-section .left-content {
+  flex: 0 0 60%;
+  padding-right: 20px;
+}
+
+.main-section .form-container {
+  background-color: #ffc107;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  margin-left: 20px;
+}
+
+.main-section .form-container h4 {
+  color: #14274e;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.main-section .form-container .form-group {
+  position: relative;
+}
+
+.main-section .form-container .form-group input,
+.main-section .form-container .form-group select {
+  padding-left: 40px;
+}
+
+.main-section .form-container .form-group i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.2rem;
+}
+
+.main-section .form-container .btn {
+  background-color: #14274e;
+  color: white;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .main-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .main-section .left-content {
+      padding-right: 0;
+  }
+
+  .main-section .form-container {
+      margin-left: 0;
+  }
+}
+.circle-image {
+  width: 100%;
+  max-width: 350px;
+  height: 380px;
+  border-radius: 50%;
+  
+}
+
+.circle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+h4 {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+}
+
+h4::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: yellow;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+h1{
+  font-weight: bolder;
+}
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.apply-btn {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+        /* Container Styling */
+        .container {
+            max-width: 1200px;
+        }
+
+        /* Card Styling */
+        .card {
+            /* background: linear-gradient(135deg, #232526, #414345); */
+            border: none;
+            color: black;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(255, 235, 235, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(226, 108, 108, 0.4);
+        }
+
+        .card img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        /* .card:hover img {
+            transform: scale(1.05);
+        } */
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        /* .card-body{
+            background-color: transparent;
+        } */
+
+        .card-body ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card-body ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+        }
+
+        .card-body ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #00d4ff;
+            font-size: 1rem;
+        }
+
+        .apply-btn {
+            background: linear-gradient(135deg, #00d4ff, #0078ff);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 15px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .apply-btn:hover {
+            background: linear-gradient(135deg, #0078ff, #00d4ff);
+            transform: scale(1.05);
+        }
+
+        .card-equal-height {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .card-body {
+            flex: 1;
+        }
+        /* Dark line between left and right sections */
+.custom-border {
+    border-left: 3px solid #263d81; /* Dark Blue Border */
+    padding-left: 20px; /* Adds space between the border and the text */
+  }
+  
+  /* Emoji marker for list items */
+  .emoji-marker {
+    font-size: 1.5rem; /* Adjust the emoji size */
+    margin-right: 10px;
+  }
+  
+  /* Justify text alignment */
+  .justify-text {
+    text-align: justify;
+  }
+
+  /* Define the primary color (adjust according to your theme) */
+:root {
+    --primary-color: #263d81; /* Blue color as primary color */
+    --gradient-start: #4c6fbb; /* Lighter shade for gradient effect */
+    --gradient-end: #1e3a8a; /* Darker shade for gradient effect */
+  }
+  
+  /* Amazing heading styles */
+  .amazing-heading {
+    font-size: 1.5rem; /* Adjusted size for subheadings */
+    font-weight: 700; /* Bold weight */
+    background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end)); /* Gradient background */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    color: transparent; /* Make text transparent to show the gradient */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 255, 255, 0.4); /* Glow effect */
+    letter-spacing: 1px; /* Slight letter spacing */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for hover effect */
+  }
+  
+  .amazing-heading:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    color: var(--primary-color); /* Change text color on hover */
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 255, 255, 0.8); /* More intense glow effect on hover */
+  }
+  
+  /* Apply the amazing-heading style specifically to <b> elements with .textprimary class */
+  .textprimary {
+    background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end)); /* Gradient background */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    color: transparent; /* Make text transparent to show the gradient */
+    font-weight: 700; /* Bold weight */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 255, 255, 0.4); /* Glow effect */
+    letter-spacing: 1px; /* Slight letter spacing */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for hover effect */
+  }
+  
+    /* Section Background */
+    section {
+        /* background: linear-gradient(to right, #4facfe, #00f2fe); Amazing gradient background */
+        padding: 50px 0;
+      }
+  
+      /* Heading Design */
+      h2 {
+        color: #fff;
+        font-family: 'Arial Black', sans-serif;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      }
+  
+      /* Scrolling Section Styling */
+      .scroll-section {
+        overflow: hidden; /* Hide overflow */
+        white-space: nowrap; /* Ensure single-line scrolling */
+        position: relative;
+      }
+  
+      /* Cards Container */
+      .scroll-cards {
+        display: inline-flex;
+        animation: scroll-left 20s linear infinite; /* Continuous scroll animation */
+      }
+  
+      /* Individual Card Design */
+      .card {
+        min-width: 300px; /* Fixed card size */
+        margin: 0 20px; /* Proper spacing between cards */
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Realistic shadow effect */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+      }
+  
+      /* Card Animation on Hover */
+      .card:hover {
+        transform: scale(1.05); /* Slight zoom effect */
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+      }
+  
+      /* Scroll Animation */
+      @keyframes scroll-left {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+  
+      /* Add Scaling Effect While Moving */
+      .scroll-cards .card {
+        animation: slight-scale 4s infinite ease-in-out; /* Smooth scaling */
+      }
+  
+      @keyframes slight-scale {
+        0%, 100% {
+          transform: scale(1); /* Normal size */
+        }
+        50% {
+          transform: scale(0.97); /* Slightly smaller during movement */
+        }
+      }
+  
+      @keyframes borderAndShadowAnimation {
+        0% {
+          border-color: #ff007f;
+          box-shadow: 0 0 10px rgba(255, 0, 127, 0.5), 0 0 30px rgba(255, 0, 127, 0.3);
+        }
+        25% {
+          border-color: #00bcd4;
+          box-shadow: 0 0 10px rgba(0, 188, 212, 0.5), 0 0 30px rgba(0, 188, 212, 0.3);
+        }
+        50% {
+          border-color: #4caf50;
+          box-shadow: 0 0 10px rgba(76, 175, 80, 0.5), 0 0 30px rgba(76, 175, 80, 0.3);
+        }
+        75% {
+          border-color: #ff9800;
+          box-shadow: 0 0 10px rgba(255, 152, 0, 0.5), 0 0 30px rgba(255, 152, 0, 0.3);
+        }
+        100% {
+          border-color: #ff007f;
+          box-shadow: 0 0 10px rgba(255, 0, 127, 0.5), 0 0 30px rgba(255, 0, 127, 0.3);
+        }
+      }
+      
+      .card-border-shadow-animation {
+        border: 3px solid #ff007f; /* Initial border color */
+        animation: borderAndShadowAnimation 5s infinite linear;
+        padding: 20px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        background-color: #333;
+        color: white;
+        background: linear-gradient(to right, #000000, #434343); 
+        padding: 50px 0;
+      }
+      
+      footer .items-list li::marker {
+        content: "👉"; /* Custom marker */
+        font-size: 1.5em; /* Adjust the size as needed */
+        margin-right: 10px; /* Space between the marker and the text */
+      }
+      
